@@ -7,6 +7,8 @@ Autor: Matheus Pôssas
 
 [StackBlitz ⚡️](https://stackblitz.com/edit/lib-finder)
 
+LibFinder é um buscador de bibliotecas CDN hospedadas no *cdnjs*. Seu objetivo é possibiltar uma **visão geral rápida** de qualquer uma das bibliotecas disponíveis, basta pesquisar e selecionar um item da lista
+
 | Avaliação da PWA           |                                                                                                                                                                  |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Páginas                    | A aplicação possui uma página onde são exibidos os resultados da pesquisa e, ao selecionar um dos items da lista, é exibida outra página com os detalhes do item |
