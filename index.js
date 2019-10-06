@@ -114,7 +114,12 @@ function removerAcentuacao(texto) {
   return texto;				 
 }
 
-document.getElementById('search').setAttribute('placeholder', t());
+var checkExist = setInterval(function() {
+   if (document.getElementById('search')) {
+      document.getElementById('search').setAttribute('placeholder', t());
+      clearInterval(checkExist);
+   }
+}, 100); 
 
 function t() {
   if (!localStorage.language) localStorage.setItem('language', navigator.language);
