@@ -7,7 +7,7 @@
   "display": "standalone",
   "description": "Um buscador de bibliotecas CDN",
   "background_color": "white",
-  "theme_color": "#4A90E2"
+  "theme_color": "#4A90E2",
   "icons": [
     {
       "src": "/img/ic_mdpi.png",
