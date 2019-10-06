@@ -1,6 +1,16 @@
 import './style.css';
 
 const ajax = new XMLHttpRequest();
+// Registrar service worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      console.log('Registro do ServiceWorker bem sucedido com escopo: ', registration.scope);
+    }, function(err) {
+      console.log('Registro do ServiceWorker falhou: ', err);
+    });
+  });
+}
 
 // Busca bibliotecas de acordo com o que o usuario digitar
 function buscarPacotes(pacote) {
