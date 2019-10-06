@@ -2,7 +2,7 @@ var CACHE_NAME = 'lib-finder-cache-v1';
 var urlsToCache = [
   '/',
   '/style.css',
-  '/script.js',
+  '/index.js',
   '/img/logo.png'
 ];
 
