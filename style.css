@@ -1,0 +1,51 @@
+:root {
+  --bg-color: #4A90E2; 
+}
+
+.container {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.full-background {
+  background-color: var(--bg-color);
+}
+
+.half-background {
+  background: linear-gradient(180deg, var(--bg-color) 25%, white 0%);
+}
+
+input {
+  border-style: none;
+}
+
+.fa-search {
+  color: var(--bg-color);
+}
+
+.list-group {
+  width: 80%;
+}
+
+.list-group p {
+  font-size: 80%;
+  margin: 0;
+}
+
+/* Remove highlight from bootstrap input field */
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline: 0px !important;
+    -webkit-appearance: none;
+}

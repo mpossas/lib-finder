@@ -1,0 +1,20 @@
+<!--Bootstrap-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!--FontAwesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+<link rel="manifest" href="/manifest.webmanifest" />
+
+<div class="container">
+  <div class="row justify-content-center full-background">
+    <img src="https://stackblitz.com/files/lib-finder/github/mpossas/lib-finder/master/logo.png" alt="logo" />
+  </div>
+  <div class="row justify-content-center half-background">
+    <div class="shadow-sm p-2 mb-5 bg-white rounded d-flex justify-content-between align-items-center">
+      <input id="search" type="text" placeholder="Type the library name" onchange="buscarPacotes(this.value)"/>
+      <i class="fas fa-search"></i>
+    </div> 
+  </div>
+  <div id="content" class="row justify-content-center"></div>
+</div>
