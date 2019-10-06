@@ -114,5 +114,16 @@ function removerAcentuacao(texto) {
   return texto;				 
 }
 
+document.getElementById('search').setAttribute('placeholder', t());
+
+function t() {
+  if (!localStorage.language) localStorage.setItem('language', navigator.language);
+  switch(localStorage.language) {
+    case 'pt-BR': return 'Digite o nome da biblioteca';
+    case 'es-ES': return 'Escribe el nombre de la biblioteca';
+    default: return 'Type the library name';
+  }
+}
+
 window.buscarPacotes = buscarPacotes;
 window.buscarDetalhes = buscarDetalhes;
